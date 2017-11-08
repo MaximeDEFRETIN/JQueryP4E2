@@ -16,6 +16,7 @@ $(function(){
         $('#text').text('Donnez des notes entre 0 et 20.');
       }
     }
+
 //Ensuite on modifi le contenu de la balise de l'id text selon la moyenne des notes obtenues
     if((average >= 0) && (average < 10)){
       $('#text').text('C\'est inférieur à la moyenne. Tu as une moyenne de ' + average + '.');
@@ -30,6 +31,7 @@ $(function(){
       $('#text').text('Très bien. Tu as une moyenne de ' + average + '.');
     }
     else if (average == 20) {
+      //append() -> permet d'insert du contenu à la fin de la cible
       $('#text').text('Excellent. Tu as une moyenne de ' + average + '.');
     }
   });
